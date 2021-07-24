@@ -46,7 +46,7 @@
 </head>
 
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="54">
-    <header class="masthead" style="background: url(&quot;assets/img/Untitled%20design%20(27).png&quot;) center / cover no-repeat;filter: brightness(100%);opacity: 1;">
+    <header data-aos="zoom-out" data-aos-duration="1500" data-aos-once="true" class="masthead" style="background: url(&quot;assets/img/Untitled%20design%20(27).png&quot;) center / cover no-repeat;filter: brightness(100%);opacity: 1;">
         <div class="container" style="height: 692px;">
             <div class="col-12">
                 <div class="intro-text" style="padding-top: 2%;padding-bottom: 100px;">
@@ -56,7 +56,7 @@
                     </div>
                 </div>
             </div>
-        </div><audio data-aos="zoom-in" data-aos-duration="1750" data-aos-once="true" controls="" src="assets/music/To Have and to Hold (Instrumental).mp3"></audio>
+        </div><audio data-aos="zoom-in" data-aos-duration="1750" data-aos-once="true" controls=""></audio>
     </header>
     <section style="background: url(&quot;assets/img/Untitled%20design%20(15).png&quot;) left / contain no-repeat, rgba(255,255,255,0.2);padding-top: 25px;padding-bottom: 25px;">
         <div class="container d-xl-flex">
@@ -207,35 +207,48 @@
             <div class="row justify-content-center align-items-center" style="color: var(--bs-dark);">
                 <div class="col-lg-10 col-xxl-10 text-center" style="color: var(--bs-dark);">
                     <h1 class="text-uppercase section-heading" data-aos="zoom-in" data-aos-duration="1250" data-aos-once="true" style="color: var(--bs-dark);font-family: Italianno, serif;font-size: 100px;margin-bottom: 0px;line-height: 120px;letter-spacing: normal;">RSVP<br></h1>
-                    <p data-aos="zoom-in-down" data-aos-duration="1500" data-aos-once="true" style="color: var(--bs-dark);font-family: Average, serif;"><br>Bagi keluarga yang dapat maupun tidak dapat menghadiri Acara Resepsi secara langsung, kami memohon kesediaannya untuk mengisi formulir berikut sebelum hari penyelenggaraan acara, mengingat sangat terbatasnya undangan yang dapat kami persiapkan. Atas pengertiannya, kami mengucapkan terima kasih.<br><br></p>
+                    <p data-aos="zoom-in-down" data-aos-duration="1500" data-aos-once="true" style="color: var(--bs-dark);font-family: Average, serif;"><br>For families who can or cannot attend the Reception in person, we ask for their willingness to fill out the following form before the day of the event, considering the very limited number of invitations we can prepare. For understanding, we thank you.<br><br></p>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-11 col-lg-12 col-xxl-10">
-                    <form id="contactForm" name="contactForm" novalidate="novalidate">
+                    <form id="myForm" name="myForm" novalidate="novalidate">
                         <div class="row justify-content-center">
                             <div class="col" data-aos="zoom-in" data-aos-duration="1000" style="background: url(&quot;assets/img/DIV_7584.jpg&quot;) center / cover no-repeat;border-radius: 20px;">
                                 <div></div>
                             </div>
                             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6" data-aos="zoom-out" data-aos-duration="1500" data-aos-once="true" style="border-radius: 20px;box-shadow: 0px 0px 9px var(--bs-secondary);margin-left: 10px;padding: 15px;padding-top: 15px;padding-bottom: 15px;margin-right: 10px;">
-                                <div class="form-group mb-3" style="font-family: Copse, serif;"><span style="color: var(--bs-dark);font-size: 15px;font-family: Average, serif;">Email</span><input class="form-control form-control-sm" type="email" id="email" placeholder="Your Email *" required=""></div>
-                                <div class="form-group mb-3"><span style="color: #000000;font-size: 15px;font-family: Average, serif;">Nama</span><input class="form-control form-control-sm" type="text" id="name" placeholder="Your Name *" required=""></div>
-                                <div class="form-group mb-3"><span style="color: #000000;font-size: 15px;font-family: Average, serif;">Nomor WhatsApp</span><input class="form-control form-control-sm" type="tel" placeholder="Your Phone *" required=""></div>
+                                <div class="form-group mb-3" style="font-family: Copse, serif;"><span style="color: var(--bs-dark);font-size: 15px;font-family: Average, serif;">Email</span><input class="form-control form-control-sm" type="email" id="email" placeholder="Your Email *" required="" name="email"></div>
+                                <div class="form-group mb-3"><span style="color: #000000;font-size: 15px;font-family: Average, serif;">Nama</span><input class="form-control form-control-sm" type="text" id="name" placeholder="Your Name *" required="" name="nama"></div>
+                                <div class="form-group mb-3"><span style="color: #000000;font-size: 15px;font-family: Average, serif;">Nomor WhatsApp</span><input class="form-control form-control-sm" type="tel" placeholder="Your Phone *" required="" name="wa"></div>
                                 <div class="form-group mb-3"><span style="color: var(--bs-dark);font-size: 15px;font-family: Average, serif;">Kehadiran</span>
-                                    <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-1" style="padding: 7px;margin-top: 10px;margin-left: -22px;"><label class="form-check-label" for="formCheck-1" style="color: #000000;font-size: 15px;padding-right: 0px;padding-left: 5px;font-family: Average, serif;">Hadir</label></div>
-                                    <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-2" style="padding: 7px;margin-top: 10px;margin-left: -22px;"><label class="form-check-label" for="formCheck-1" style="color: #000000;font-size: 15px;padding-right: 0px;padding-left: 5px;font-family: Average, serif;">Tidak Hadir</label></div><small class="form-text text-danger flex-grow-1 help-block lead"></small>
+                                    <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-1" style="padding: 7px;margin-top: 10px;margin-left: -22px;" name="kehadiran" value="1"><label class="form-check-label" for="formCheck-1" style="color: #000000;font-size: 15px;padding-right: 0px;padding-left: 5px;font-family: Average, serif;">Hadir</label></div>
+                                    <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-2" style="padding: 7px;margin-top: 10px;margin-left: -22px;" name="kehadiran" value="0"><label class="form-check-label" for="formCheck-1" style="color: #000000;font-size: 15px;padding-right: 0px;padding-left: 5px;font-family: Average, serif;">Tidak Hadir</label></div><small class="form-text text-danger flex-grow-1 help-block lead"></small>
                                 </div>
                                 <div class="form-group mb-3"><span style="color: #000000;font-size: 15px;font-family: Average, serif;">Jumlah Tamu (Bagi yang hadir)</span>
-                                    <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-3" style="padding: 7px;margin-top: 10px;margin-left: -22px;"><label class="form-check-label" for="formCheck-1" style="color: #000000;font-size: 15px;padding-right: 0px;padding-left: 5px;font-family: Average, serif;">1 orang</label></div>
-                                    <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-4" style="padding: 7px;margin-top: 10px;margin-left: -22px;"><label class="form-check-label" for="formCheck-1" style="color: #000000;font-size: 15px;padding-right: 0px;padding-left: 5px;font-family: Average, serif;">2 orang</label></div><small class="form-text text-danger help-block lead"></small>
+                                    <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-3" style="padding: 7px;margin-top: 10px;margin-left: -22px;" name="jumlah" value="1"><label class="form-check-label" for="formCheck-1" style="color: #000000;font-size: 15px;padding-right: 0px;padding-left: 5px;font-family: Average, serif;">1 orang</label></div>
+                                    <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-4" style="padding: 7px;margin-top: 10px;margin-left: -22px;" name="jumlah" value="2"><label class="form-check-label" for="formCheck-1" style="color: #000000;font-size: 15px;padding-right: 0px;padding-left: 5px;font-family: Average, serif;">2 orang</label></div><small class="form-text text-danger help-block lead"></small>
                                 </div>
+                                <div class="form-group mb-3"><span style="color: #000000;font-size: 15px;font-family: Average, serif;">Wedding Wish</span><input class="form-control form-control-sm" type="text" placeholder="Write your wishes here!" name="wish"></div>
                                 <div class="row text-center justify-content-center align-items-center">
-                                    <div class="col"><button class="btn btn-success btn-lg text-center btn-xl text-uppercase" id="sendMessageButton" type="submit" style="font-family: Average, serif;background: var(--bs-dark);border-radius: 100000px;border-color: var(--bs-gray);">KIRIM</button></div>
+                                    <div class="col"><button class="btn btn-success btn-lg text-center btn-xl text-uppercase" id="sendMessageButton" type="button" style="font-family: Average, serif;background: var(--bs-dark);border-radius: 100000px;border-color: var(--bs-gray);" onclick="bang()">KIRIM</button></div>
                                 </div>
                             </div>
                         </div>
                     </form>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section style="padding: 30px 0px;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <h1 class="text-center" style="font-family: Italianno, serif;font-size: 65px;">Wedding Wishes</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-10"></div>
             </div>
         </div>
     </section>
@@ -255,12 +268,12 @@
             <div class="row justify-content-center align-items-center">
                 <div class="col-md-12 col-xxl-10">
                     <h1 class="display-1 text-center" data-aos="zoom-in" data-aos-duration="1750" data-aos-once="true" style="font-family: Italianno, serif;">Send Gift</h1>
-                    <p class="text-center" data-aos="zoom-in-left" data-aos-duration="1500" data-aos-once="true" style="font-family: Average, serif;font-size: 19px;"><br>Tanpa mengurangi rasa hormat, Bagi Bapak/Ibu/Saudara(i) yang hendak menyampaikan hadiah secara virtual, dapat memindai kode QR berikut ini:<br><br></p>
+                    <p class="text-center" data-aos="zoom-in-left" data-aos-duration="1500" data-aos-once="true" style="font-family: Average, serif;font-size: 19px;"><br>With all due respect, For those of you who wants to deliver a virtual gift, can use the QR code below:<br><br></p>
                     <div class="text-center"><img class="img-thumbnail img-fluid" data-aos="zoom-in-right" data-aos-duration="2500" data-aos-delay="50" data-aos-once="true" style="transform: perspective(0px);box-shadow: 0px 0px 20px var(--bs-secondary);" width="200px" src="assets/img/WhatsApp%20Image%202021-06-26%20at%2019.08.40.jpeg"></div>
                 </div>
             </div>
         </div>
-    </section>
+    </section><button class="btn btn-primary" type="button" onclick="bang()">Button</button>
     <section style="padding-top: 75px;padding-bottom: 75px;background: url(&quot;assets/img/Untitled%20design%20(14).png&quot;) center / cover no-repeat;">
         <div class="container">
             <div class="row justify-content-center align-items-center">
@@ -271,6 +284,15 @@
                         </blockquote>
                         <figcaption class="blockquote-footer" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-once="true" style="font-family: Average, serif;font-size: 22.1px;color: rgba(0,0,0,0.4);"><strong>Collosians 3 : 14 - 15</strong><br></figcaption>
                     </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="background: url(&quot;assets/img/Untitled%20design%20(29).png&quot;) left / contain no-repeat;padding-top: 30px;padding-bottom: 30px;">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-7">
+                    <div><iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/YQA6aHpCAus?autoplay=1&amp;mute=1" class="responsive-iframe" width="100%" height="350"></iframe></div>
                 </div>
             </div>
         </div>
@@ -369,6 +391,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
     <script src="assets/js/Slideshow-102-Automatic.js"></script>
+    <script src="assets/js/untitled.js"></script>
 </body>
 
 </html>
