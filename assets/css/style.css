@@ -11,7 +11,7 @@
   height: 640px;
   background-size: cover;
   position: absolute;
-  animation: slide 25s infinite;
+  animation: slide 20s infinite;
   opacity: 0;
 }
 

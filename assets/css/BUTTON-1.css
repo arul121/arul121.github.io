@@ -1,0 +1,24 @@
+#pbutton1 {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  padding: 20px;
+  z-index: 1;
+}
+
+.pause {
+  class: "fas fa-volume-mute";
+}
+
+* {
+  font-family: roboto;
+}
+
+* {
+  /*box-sizing: inherit;*/
+}
+
+*:before, *:after {
+  /*box-sizing: inherit;*/
+}
+

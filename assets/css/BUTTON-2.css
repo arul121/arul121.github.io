@@ -1,0 +1,24 @@
+#pbutton {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  padding: 20px;
+  z-index: 1;
+}
+
+.play {
+  class: "fas fa-volume-up";
+}
+
+* {
+  font-family: roboto;
+}
+
+* {
+  /*box-sizing: inherit;*/
+}
+
+*:before, *:after {
+  /*box-sizing: inherit;*/
+}
+
